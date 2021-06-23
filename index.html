@@ -1,0 +1,65 @@
+ 
+<html>
+  <head>
+    <title>Image recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <center>
+       <button style = "width:100%; height:10%; font-size:30px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Image Recognizer</button>
+      <br><br>
+
+      <p style="font-size: 22px;">Model is trained to identify the following objects: </p>
+
+      <label>Phone</label>
+      <br>
+      <hr>
+      <label>Ipad</label>
+      <br>
+      <hr>
+      <label>Mouse</label>
+      <br>
+      <hr>
+      <label>TV Remote</label>
+      <br>
+      <hr>
+      <label>Pencil Box</label>
+      <br>
+      <hr>
+      <label>Webcam View - </label>
+    <div id = "camera"></div>
+     <div id = "cam_com"></div>
+     <div id = "circle"></div>
+      <br><br>
+   <div id = "result"></div>
+   <div id = "cam_com2"></div>
+   <div id = "circle2"></div>
+      <br><br>
+       <button onclick = "capture_image()" class = "btn btn-primary">Capture Image</button>
+      <br><br>
+       <button onclick = "identify_image()" class = "btn btn-success">Identify Image</button>
+      <br><br>
+
+      <p style="font-size: 22px;">Object :  <span id = "Object"></span></p>
+      <p style="font-size: 22px;">Accuracy : <span id = "Accuracy" ></span></p>
+    </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
